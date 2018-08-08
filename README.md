@@ -29,7 +29,8 @@ Very interesting!  We can see two rather disting grouping of the data. Non-coinc
 tech and or DOW industries, which is where the data was pulled. (top 5 holdings of QQQ, top 5 of DIA.)
 
 PCA allows for us to reduce the number of dimensions we are working with, which when dealing with financial data can often
-be extremely bountiful (curse of dimensionality).   This allows for easier visualization, understanding, computation, and intuition.  
+be extremely bountiful (curse of dimensionality).   This allows for easier visualization, computation, and intuition.  
+
 We could further pair this with K means clustering as a way to cluster and classify our factor exposures, 
 and we could try to classify any new data as one risk exposure or the other. 
 
