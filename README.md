@@ -25,7 +25,7 @@ Now we calculate our factor returns and factor exposures (risk variable).   We c
 component against our second.  Here's the result:
 ![figure_3](https://user-images.githubusercontent.com/34739163/43813588-89d92420-9a83-11e8-858a-79e9276ec2e6.png)
 
-Very interesting!  We can see two rather disting grouping of the data. Non-coincidentally they group into their respective 
+Very interesting!  We can see two rather distinct groupings of the data. Non-coincidentally they group into their respective 
 tech and or DOW industries, which is where the data was pulled. (top 5 holdings of QQQ, top 5 of DIA.)
 
 PCA allows for us to reduce the number of dimensions we are working with, which when dealing with financial data can often
