@@ -2,9 +2,10 @@
 Principal Component Analysis on a data set of 10 stocks in order to reduce dimensionality to 2 principal components.  Numpy, Pandas.
 
 Today we will perform PCA on a set of 10 stocks I've chosen, the top 5 holdings for the Nasdaq 
-and top 5 holdings of the Dow Jonesm as of August 2018.  The data is included in the repository as 'PCAstocks.csv'.
+and top 5 holdings of the Dow Jonesm as of August 2018.   The data is included in the repository as 'PCAstocks.csv'.
 
 Nasdaq: Apple, Amazon, Microsoft, Google, Facebook
+
 Dow: Boing, United Health Group, Goldmansachs, 3M, Home Depot
 
 We first decide the number of dimensions we want to reduce our data set to.  We can do this by naively guessing and checking, 
@@ -20,7 +21,7 @@ We fit our data using the number of dimensions we want and scikitlearn's PCA().
 Print out of the desired dimensions and variability of the data they explain:
 ![figure_2](https://user-images.githubusercontent.com/34739163/43813064-52c0e25e-9a81-11e8-8ea2-06241497c365.png)
 
-Now we calculate our factor returns and factor exposures (risk variable).  We can then plot the factor exposure or our first principal
+Now we calculate our factor returns and factor exposures (risk variable).   We can then plot the factor exposure or our first principal
 component against our second.  Here's the result:
 ![figure_3](https://user-images.githubusercontent.com/34739163/43812934-d9da59ce-9a80-11e8-9c1c-738f2929cbb3.png)
 
@@ -28,7 +29,7 @@ Very interesting!  We can see two rather disting grouping of the data. Non-coinc
 tech and or DOW industries, which is where the data was pulled. (top 5 holdings of QQQ, top 5 of DIA.)
 
 PCA allows for us to reduce the number of dimensions we are working with, which when dealing with financial data can often
-be extremely bountiful (curse of dimensionality).  This allows for easier visualization, understanding, computation, and intuition.  
+be extremely bountiful (curse of dimensionality).   This allows for easier visualization, understanding, computation, and intuition.  
 We could further pair this with K means clustering as a way to cluster and classify our factor exposures, 
 and we could try to classify any new data as one risk exposure or the other. 
 
