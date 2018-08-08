@@ -19,11 +19,11 @@ With this in mind we will make our desired dimensions 2, which is also nice beca
 
 We fit our data using the number of dimensions we want and scikitlearn's PCA().
 Print out of the desired dimensions and variability of the data they explain:
-![figure_2](https://user-images.githubusercontent.com/34739163/43813064-52c0e25e-9a81-11e8-8ea2-06241497c365.png)
+![figure_2](https://user-images.githubusercontent.com/34739163/43813586-8868327a-9a83-11e8-840e-c22ccf539889.png)
 
 Now we calculate our factor returns and factor exposures (risk variable).   We can then plot the factor exposure or our first principal
 component against our second.  Here's the result:
-![figure_3](https://user-images.githubusercontent.com/34739163/43812934-d9da59ce-9a80-11e8-9c1c-738f2929cbb3.png)
+![figure_3](https://user-images.githubusercontent.com/34739163/43813588-89d92420-9a83-11e8-858a-79e9276ec2e6.png)
 
 Very interesting!  We can see two rather disting grouping of the data. Non-coincidentally they group into their respective 
 tech and or DOW industries, which is where the data was pulled. (top 5 holdings of QQQ, top 5 of DIA.)
