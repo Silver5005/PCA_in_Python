@@ -1,20 +1,18 @@
 # Use numpy genfromtxt() to import CSV data as matrix. (10 stocks x 504 days)
 import numpy as np # Numpy for matrix math
-from numpy import genfromtxt
+import pandas as pd
 
 # First we import our stock data.  We will reduce 10 unique stocks to a dimensionality of 2 using PCA to allow for visualization.
 # Each col = unique stock, in this order: AAPL, AMZN, MSFT, GOOG, FB, BA, UNH, GS, MMM, HD
 # Each value in matrix represents a % change for that day. (decimalized)
-my_data = genfromtxt('PCAstocks.csv', delimiter=',')
-my_data = np.delete(my_data, (0), axis=0) #remove NA from strings to clean data
-my_data = np.delete(my_data, (0), axis=1) #remove NA
-my_data = np.ndarray.tolist(my_data)
+my_data = pd.read_csv('PCAstocks.csv')
+
 # Now we perform PCA on these 10 stocks to reduce dimensionality to 2.
 from sklearn.decomposition import PCA
 #num_pc = 10 # Optional input to show amount of variability explained by each unique input
 num_pc = 2 # Actual desired input
 
-X = np.asarray(my_data)
+X = my_data
 [n,m] = X.shape
 print ('The number of timestamps is {}.'.format(n)) # Prints number of days (rows)
 print ('The number of stocks is {}.'.format(m)) # Prints number of stocks (cols)
@@ -53,10 +51,9 @@ plt.xticks(x,fontsize = 16)
 plt.yticks(fontsize = 16)
 plt.xlim([1, num_pc])
 plt.ylim([50,100])
-#
-# import pandas as pd
-# factor_returns = X.dot(pca_components.T) # Dot-product of the transpose
-# factor_returns = pd.DataFrame(columns=["factor 1", "factor 2"], # Create pandas dataframe
+
+factor_returns = X.dot(pca_components.T) # Dot-product of the transpose
+# factor_returns = pd.DataFrame(columns=["0", "1"], # Create pandas dataframe
 #                               index=my_data.index,
 #                               data=factor_returns)
 # factor_returns.head()
