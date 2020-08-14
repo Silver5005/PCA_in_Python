@@ -2,7 +2,7 @@
 Principal Component Analysis on a data set of 10 stocks in order to reduce dimensionality to 2 principal components.  Numpy, Pandas.
 
 Today we will perform PCA on a set of 10 stocks I've chosen, the top 5 holdings for the Nasdaq 
-and top 5 holdings of the Dow Jonesm as of August 2018.   The data is included in the repository as 'PCAstocks.csv'.
+and top 5 holdings of the Dow Jones as of August 2018.   The data is included in the repository as 'PCAstocks.csv'.
 
 Nasdaq: Apple, Amazon, Microsoft, Google, Facebook
 
